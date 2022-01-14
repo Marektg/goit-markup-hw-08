@@ -3,12 +3,21 @@
  --second-font:font-family: 'Raleway', sans-serif;
  --hovercol: #2196F3;
  --maincolor: #212121;
+ --secondcolor: #757575;
  
 }
 
 body{
     font-family: var(--main-font);
     color:var(--maincolor)
+}
+.section-head{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+    letter-spacing: 0.03em;
+
 }
 /* START HEADER */
 .logo {
@@ -42,7 +51,7 @@ body{
 
  .navi-list-item a{
         text-decoration: none;
-        color:#212121;
+        color:var(--maincolor)
 }
  
  .navi-list-item a:hover,
@@ -51,7 +60,7 @@ body{
 }
 
 .contact{
-    color: #757575;
+    color: var(--secondcolor);
     text-decoration: none;
 }
 .contact:hover{
@@ -72,7 +81,7 @@ body{
     letter-spacing: 0.06em;
 }
 .main-bnt{
-    background-color: #2196F3;
+    background-color: var(--hovercol);
     color: #FFFFFF;
     font-weight: 700;
     font-size: 16px;
@@ -81,6 +90,83 @@ body{
     letter-spacing: 0.06em;
 }
 /* END MAIN-HERO */
+
+/* START MAIN-DESCRIPTION */
+.description-list-item h3{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+}
+
+.description-list-item p{
+    color:var(--secondcolor)
+    font-weight:400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+
+
+}
+/* END MAIN-DESCRIPTION */
+
+/* START MAIN-WHTAWEDO */
+
+/* END MAIN-WHTAWEDO */
+
+/* START MAIN-ABOUTUS */
+.aboutus{
+    background-color: #F5F4FA;
+}
+.aboutus-list-item{
+    background-color: #FFFFFF;
+}
+.aboutus-list-item h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.188;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.aboutus-list-item p{
+    color: var(--secondcolor);
+    font-size: 16px;
+    line-height: 1.188;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+/* END MAIN-ABOUTUS */
+
+/* START PORTFOLIO-FILTERS */
+.filter-bnt{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    background-color: #F5F4FA;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.filter-bnt:hover{
+    color:#FFFFFF;
+    background-color: var(--hovercol);
+}
+
+/* END PORTFOLIO-FILTERS */
+
+/* START PROJECTS */
+.item-head{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.item-description{
+    color:var(--secondcolor);
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+}
+/* END PROJECTS */
 
 /* START FOOTER */
 .footer{
