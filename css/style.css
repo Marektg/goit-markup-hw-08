@@ -1,6 +1,6 @@
 :root{
- --main-font:font-family: 'Roboto', sans-serif;
- --second-font:font-family: 'Raleway', sans-serif;
+ --main-font: 'Roboto', sans-serif;
+ --second-font: 'Raleway', sans-serif;
  --hovercol: #2196F3;
  --maincolor: #212121;
  --secondcolor: #757575;
@@ -88,6 +88,7 @@ body{
     line-height: 1.875;
     text-align: center;
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
 /* END MAIN-HERO */
 
@@ -100,13 +101,11 @@ body{
 }
 
 .description-list-item p{
-    color:var(--secondcolor)
+    color:var(--secondcolor);
     font-weight:400;
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
-
-
 }
 /* END MAIN-DESCRIPTION */
 
