@@ -181,8 +181,7 @@ h1, h2, h3, p, ul {
 /* START MAIN-WHTAWEDO */
 
 .whatwedo-list{
-     display: flex;
-    flex-direction: row;
+    display: flex;
     justify-content: space-evenly;
     list-style-type: none;
     margin-top:50px;
@@ -224,37 +223,6 @@ h1, h2, h3, p, ul {
 }
 /* END MAIN-ABOUTUS */
 
-/* START PORTFOLIO-FILTERS */
-.filter-bnt{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.625;
-    background-color: #F5F4FA;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
-.filter-bnt:hover{
-    color:#FFFFFF;
-    background-color: var(--hovercol);
-}
-
-/* END PORTFOLIO-FILTERS */
-
-/* START PROJECTS */
-.item-head{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-}
-.item-description{
-    color:var(--secondcolor);
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.03em;
-}
-/* END PROJECTS */
-
 /* START FOOTER */
 .footer{
     background-color: #2F303A;
@@ -275,3 +243,57 @@ h1, h2, h3, p, ul {
     text-decoration: none;
 }
 /* END FOOTER */
+
+/* START PORTFOLIO-FILTERS */
+.filters-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 34px;
+}
+.filter-bnt{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-left: 8px;
+}
+.filter-bnt:hover{
+    color:#FFFFFF;
+    background-color: var(--hovercol);
+}
+
+/* END PORTFOLIO-FILTERS */
+
+/* START PROJECTS */
+.projects-list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    flex-wrap: wrap;
+    
+}
+.projects-list-item {
+    border-bottom: 1px solid #EEEEEE;
+    height: 404px;
+}
+.project-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.item-head{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.item-description{
+    color:var(--secondcolor);
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+}
+/* END PROJECTS */
