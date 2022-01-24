@@ -23,6 +23,8 @@ ul {
 }
 .section {
   margin: 0 auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .section-head {
   font-weight: 700;
@@ -31,10 +33,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 
 /* START HEADER */
 .header {
