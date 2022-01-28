@@ -35,11 +35,10 @@ ul {
   letter-spacing: 0.03em;
 }
 
-
 /* START HEADER */
 .header {
   border-bottom: 1px solid #ececec;
-  padding-left: 15px;
+  /* padding-left: 15px; */
   /* padding-right: 27px; */
 }
 .menu {
@@ -109,19 +108,23 @@ ul {
 
 /* START MAIN-HERO */
 .main-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #2f303a;
   height: 600px;
-  position: relative;
+}
+.main-flex {
+  display: flex;
+  justify-content: center;
+
 }
 .main-div {
   height: 200px;
   width: 696px;
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
+
 .main-title {
   font-weight: 900;
   font-size: 44px;
