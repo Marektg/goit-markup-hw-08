@@ -370,7 +370,9 @@ ul {
 .social-footer-link:hover,
 .social-footer-link:focus {
   background-color: var(--hovercol);
+  cursor: url(../images/Vector.svg), help;
 }
+
 .social-footer-link .icon {
   width: 44px;
   height: 44px;
