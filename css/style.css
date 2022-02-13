@@ -386,7 +386,9 @@ ul {
   width: 50%;
   justify-content: space-around;
 }
-
+.footmain {
+  display: flex;
+}
 .address {
   color: rgba(255, 255, 255, 100%);
   font-weight: 400;
