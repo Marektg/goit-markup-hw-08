@@ -185,50 +185,68 @@
   </main>
   <footer class="footer">
     <div class="container">
-      <ul class="footer-list">
-        <li class="footer-list-item">
-          <div class="logo">
-            <a href="#">Web<span class="logo-span-footer">Studio</span></a>
-          </div>
-          <address class="address">
-            m. Warszawa, Aleje Jerozolimskie 21<br />
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a><br />
-            <a href="tel:+48111111111">+48111111111</a>
-          </address>
-        </li>
-        <li class="footer-list-item">
-          <p class="social">dołącz do nas</p>
-          <ul class="social-footer-list">
-            <li class="social-footer-list-item">
-              <a href="#" class="social-footer-link">
-                <svg class="icon">
-                  <use href="images/sprite.svg#icon-Istagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-footer-list-item">
-              <a href="#" class="social-footer-link">
-                <svg class="icon">
-                  <use href="images/sprite.svg#icon-Tweeter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-footer-list-item">
-              <a href="#" class="social-footer-link">
-                <svg class="icon">
-                  <use href="images/sprite.svg#icon-Facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-footer-list-item">
-              <a href="#" class="social-footer-link">
-                <svg class="icon">
-                  <use href="images/sprite.svg#icon-Linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </li>
+      <div class="footmain">
+        <ul class="footer-list">
+          <li class="footer-list-item">
+            <div class="logo">
+              <a href="#">Web<span class="logo-span-footer">Studio</span></a>
+            </div>
+            <address class="address">
+              m. Warszawa, Aleje Jerozolimskie 21<br />
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a><br />
+              <a href="tel:+48111111111">+48111111111</a>
+            </address>
+          </li>
+          <li class="footer-list-item">
+            <p class="social">dołącz do nas</p>
+            <ul class="social-footer-list">
+              <li class="social-footer-list-item">
+                <a href="#" class="social-footer-link">
+                  <svg class="icon">
+                    <use href="images/sprite.svg#icon-Istagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-footer-list-item">
+                <a href="#" class="social-footer-link">
+                  <svg class="icon">
+                    <use href="images/sprite.svg#icon-Tweeter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-footer-list-item">
+                <a href="#" class="social-footer-link">
+                  <svg class="icon">
+                    <use href="images/sprite.svg#icon-Facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-footer-list-item">
+                <a href="#" class="social-footer-link">
+                  <svg class="icon">
+                    <use href="images/sprite.svg#icon-Linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+  
+        <div class="newsletter">
+          <p class="social">zapisz się do newslettera</p>
+          <form name="newsletter" class="newsletterform">
+  
+            <label for="social_email"></label>
+            <input type="email" name="email" id="social_email" placeholder="E-mail" />
+            <button type="submit" class="social-bnt">
+              Zapisz się
+              <svg class="send">
+                <use href="images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
   </footer>
 </body>
