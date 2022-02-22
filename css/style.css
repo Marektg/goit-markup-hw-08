@@ -639,10 +639,10 @@ ul {
 
 .modal-window {
   position: absolute;
-  height: 80vh;
-  width: 90vw;
-  max-height: 590px;
-  max-width: 528px;
+  /* height: 80vh;
+  width: 90vw; */
+  height: 590px;
+  width: 528px;
   overflow-y: auto;
   top: 50%;
   left: 50%;
