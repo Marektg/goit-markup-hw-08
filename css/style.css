@@ -641,7 +641,7 @@ ul {
   position: absolute;
   height: 80vh;
   width: 90vw;
-  max-height: 580px;
+  max-height: 590px;
   max-width: 528px;
   overflow-y: auto;
   top: 50%;
@@ -660,6 +660,12 @@ ul {
 }
 #user_coment {
   resize: none;
+    height: 120px;
+  padding: 16px 12px;
+}
+#user_coment::placeholder {
+  font-size: 12px;
+  color: rgba(117, 117, 117, 0.5);
 }
 .inputtitle {
   font-size: 20px;
@@ -695,6 +701,7 @@ ul {
   background-image: url(../images/person-black.svg);
   transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+#user_name:focus,
 #user_name:hover {
   background-image: url(../images/person-hov.svg);
 }
@@ -703,6 +710,7 @@ ul {
     transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+#user_phone:focus,
 #user_phone:hover {
   background-image: url(../images/phone-hov.svg);
 }
@@ -711,13 +719,11 @@ ul {
     transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+#user_email:focus,
 #user_email:hover {
   background-image: url(../images/email-hov.svg);
 }
-#user_coment {
-  height: 120px;
-  padding: 16px 12px;
-}
+.modal_label_input:focus,
 .modal_label_input:hover {
   border: 1px var(--hovercol) solid;
 }
@@ -738,9 +744,6 @@ ul {
 
 }
 .modal_akcept  a {
-  color: var(--hovercol);
-}
-#user_akcept:checked + .modal_akcept {
   color: var(--hovercol);
 }
 #user_akcept:checked + .modal_akcept::before {
