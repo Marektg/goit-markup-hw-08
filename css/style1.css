@@ -44,7 +44,7 @@ ul {
 .header {
   border-bottom: 1px solid #ececec;
 }
-.menu {
+.header-menu {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
@@ -70,13 +70,13 @@ ul {
 .logo-span-footer {
   color: #ffffff;
 }
-.navi {
+.header-navi {
   font-weight: 500;
   font-size: 14px;
   display: inline-block;
   margin: 32px 371px 32px 93px;
 }
-.navi-list {
+.header-navi-list {
   display: flex;
   width: 254px;
   justify-content: space-between;
