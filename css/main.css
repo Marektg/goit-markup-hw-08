@@ -31,7 +31,7 @@ ul {
   margin-bottom: 50px;
 }
 
-.button, .button-main-hero, .button-modal-submit {
+.button, .social-bnt, .button-main-hero, .button-modal-submit {
   height: 50px;
   width: 200px;
   background-color: #2196f3;
@@ -51,6 +51,12 @@ ul {
   margin-bottom: 40px;
   text-align: center;
   margin-left: 164px;
+}
+
+.social-bnt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header {
@@ -351,4 +357,45 @@ ul {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+.description-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+.description-list-item {
+  flex-basis: 270px;
+  display: flex;
+  flex-direction: column;
+}
+
+.description-list-item .icon {
+  width: 70px;
+  height: 70px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.item-icon {
+  text-align: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.item-heater {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  margin-top: 30px;
+}
+
+.item-paragraf {
+  color: #757575;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
 }/*# sourceMappingURL=main.css.map */

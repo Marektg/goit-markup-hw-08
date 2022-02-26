@@ -22,4 +22,9 @@
   .button-main-hero {
       @extend .button;
   }
-
+.social-bnt {
+    @extend .button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
