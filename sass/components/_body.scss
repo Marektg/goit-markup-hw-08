@@ -1,6 +1,8 @@
+@import "../utils/variables";
+
 body {
-  font-family: var(--main-font);
-  color: var(--maincolor);
+  font-family: $mainFont;
+  color: $mainColor;
 }
 h1,
 h2,
@@ -18,12 +20,13 @@ ul {
   margin: 0 auto;
   padding-top: 94px;
   padding-bottom: 94px;
-}
-.section-head {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
+
+  &-head {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
 }
