@@ -10,9 +10,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-  <!-- <link rel="stylesheet" type="text/css" href="css/main.min.css" /> -->
-    <link rel="stylesheet" type="text/css" href="css/style1.css" />
+    <!-- href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" /> -->
+  <link rel="stylesheet" type="text/css" href="css/main.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/style1.css" /> -->
 
   <title>Studio</title>
 </head>
@@ -50,38 +50,38 @@
     <!--Hero-->
     <section class="main-hero section">
       <div class="container">
-        <div class="main-flex">
-          <div class="main-div">
-            <h1 class="main-title">
+        <div class="main-hero-flex">
+          <div class="main-hero-div">
+            <h1 class="main-hero-title">
               Efektywne rozwiązania dla waszego biznesu
             </h1>
-            <button class="main-bnt" type="button" data-modal-open>Zamów usługę</button>
+            <button class="button-main-hero" type="button" data-modal-open>Zamów usługę</button>
           </div>
-          <div class="backdrop is-hidden" data-modal>
+          <div class="main-backdrop is-hidden" data-modal>
             <div class="modal-window">
-              <button class="close-btn" data-modal-close>
+              <button class="modal-window-close-btn" data-modal-close>
                 <svg width="30" height="30">
                   <use href="images/sprite.svg#icon-close" width="30" height="30"></use>
                 </svg>
               </button>
-              <p class="inputtitle">Zostaw swoje dane w formularzu poniżej</p>
+              <p class="modal-window-inputtitle">Zostaw swoje dane w formularzu poniżej</p>
               <div >
-                <form name="input" class="modalinput">
-                  <label for="user_name" class="modal_label">Imię</label>
-                    <input type="text" id="user_name" class="modal_label_input">
+                <form name="input" class="modal-window-input">
+                  <label for="user_name" class="modal-input-label">Imię</label>
+                    <input type="text" id="user_name" class="input-label_name">
                   
-                  <label for="user_phone" class="modal_label">Telefon</label>
-                  <input type="text" id="user_phone" class="modal_label_input">
+                  <label for="user_phone" class="modal-input-label">Telefon</label>
+                  <input type="text" id="user_phone" class="input-label_phone">
                   
-                  <label for="user_email" class="modal_label">Email</label>
-                    <input type="text" id="user_email" class="modal_label_input">
+                  <label for="user_email" class="modal-input-label">Email</label>
+                    <input type="text" id="user_email" class="input-label_mail">
                  
-                  <label for="user_coment" class="modal_label">Komentarz</label>
-                    <textarea name="coment" id="user_coment" cols="30" rows="10" placeholder="Wprowadź tekst" class="modal_label_input"></textarea>
+                  <label for="user_coment" class="modal-input-label">Komentarz</label>
+                    <textarea name="coment" id="user_coment" cols="30" rows="10" placeholder="Wprowadź tekst" class="input-label_coments"></textarea>
                  
-                  <input type="checkbox" name="akcept" id="user_akcept" class="visually-hidden">
+                  <input type="checkbox" name="akcept" id="user_akcept" class="modal-input_check visually-hidden">
                   <label for="user_akcept" class="modal_akcept">Oświadczam iż akceptuję <a href=#>Regulamin</a> i <a href=#>Politykę Prywatności.</a></label>
-                  <button type="submit" class="social-bnt modal">Wyślij</button>
+                  <button type="submit" class="button-modal-submit">Wyślij</button>
                 </form>
               </div>
             </div>

@@ -166,17 +166,17 @@ ul {
   background-size: cover;
   height: 600px;
 }
-.main-flex {
+.main-hero-flex {
   display: flex;
   justify-content: center;
 }
-.main-div {
+.main-hero-div {
   height: 200px;
   width: 696px;
   text-align: center;
 }
 
-.main-title {
+.main-hero-title {
   font-weight: 900;
   font-size: 44px;
   color: #ffffff;
@@ -185,7 +185,7 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.main-bnt {
+.main-hero-bnt {
   background-color: var(--hovercol);
   color: #ffffff;
   font-weight: 700;
@@ -603,7 +603,7 @@ ul {
 
 /* Okno modalne */
 
-.backdrop {
+.main-backdrop {
   width: 100vw;
   height: 100vh;
   visibility: visible;
@@ -624,7 +624,7 @@ ul {
   pointer-events: none;
 }
 
-.close-btn {
+.modal-window-close-btn {
   position: sticky;
   right: 8px;
   top: 8px;
@@ -652,7 +652,7 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-.modalinput {
+.modal-window-input {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -667,14 +667,14 @@ ul {
   font-size: 12px;
   color: rgba(117, 117, 117, 0.5);
 }
-.inputtitle {
+.modal-window-inputtitle {
   font-size: 20px;
   font-weight: 700;
   text-align: center;
   margin-top: 40px;
   margin-bottom: 12px;
 }
-.modal_label {
+.modal-input-label {
   font-size: 12px;
   font-weight: 400;
   color: #757575;
@@ -761,8 +761,8 @@ ul {
   overflow: hidden;
 }
 .modal {
-  margin-bottom: 40px;
-  margin-top: 30px;
-  text-align: center;
-  margin-left: 164px;
+      margin-bottom: 40px;
+      margin-top: 30px;
+      text-align: center;
+      margin-left: 164px;
 }
