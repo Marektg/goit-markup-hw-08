@@ -398,4 +398,28 @@ ul {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
+}
+
+.whatwedo-list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+.whatwedo-list-item {
+  position: relative;
+  display: block;
+}
+.whatwedo-list-item-content {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  background: rgba(47, 48, 58, 0.8);
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  bottom: 4px;
+  padding-top: 27px;
 }/*# sourceMappingURL=main.css.map */
