@@ -1,3 +1,4 @@
+@import "../utils/mixin";
 .aboutus {
   background-color: #f5f4fa;
   &-list {
@@ -15,25 +16,12 @@
       align-items: center;
       transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      & h3 {
-        margin-top: 30px;
-        margin-bottom: 10px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.188;
-        text-align: center;
-        letter-spacing: 0.03em;
-      }
-      & p {
-        color: $secondColor;
-        font-size: 16px;
-        line-height: 1.188;
-        text-align: center;
-        letter-spacing: 0.03em;
-        margin-bottom: 30px;
-      }
+      
     }
   }
+}
+.item-paragraf {
+  @include size(16px);
 }
 .media-list {
   display: flex;
@@ -51,16 +39,16 @@
   border-radius: 50%;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.media-link:hover,
-.media-link:focus {
+&:hover,
+&:focus {
   background-color: $hoverColor;
 }
-.media-link .icon {
+& .icon {
   width: 44px;
   height: 44px;
   fill: #afb1b8;
 }
-.media-link:hover .icon {
+&:hover .icon {
   fill: #fff;
+}
 }
