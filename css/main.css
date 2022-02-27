@@ -363,6 +363,7 @@ ul {
 .modal__input-check:checked + .modal__akcept::before {
   border: 1px #2196f3 solid;
   background-image: url(../images/icon-check.svg);
+  background-position: center;
 }
 
 .visually-hidden {

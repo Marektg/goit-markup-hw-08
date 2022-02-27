@@ -144,6 +144,7 @@
 .modal__input-check:checked + .modal__akcept::before {
   border: 1px $hoverColor solid;
   background-image: url(../images/icon-check.svg);
+  background-position: center;
 }
 .visually-hidden {
   position: absolute !important;
