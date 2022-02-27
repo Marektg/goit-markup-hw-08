@@ -4,7 +4,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
-  &-list {
+  &__list {
     display: flex;
     list-style: none;
     width: 50%;
@@ -38,16 +38,16 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
-  &-footer-list {
+  &__footer__list {
     display: flex;
     justify-content: space-between;
     list-style: none;
     margin-bottom: 30px;
-    &-item:not(:last-child) {
+    &__item:not(:last-child) {
       margin-right: 10px;
     }
   }
-  &-footer-link {
+  &__footer-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,13 +72,13 @@
     }
   }
 }
-.media-list-item:not(:last-child) {
+.media__list__item:not(:last-child) {
   margin-right: 10px;
 }
 
 .newsletter {
   width: 50%;
-  &-form {
+  &__form {
     display: flex;
     &-input {
       color: #fff;

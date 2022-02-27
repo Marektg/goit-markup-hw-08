@@ -1,12 +1,12 @@
 @import "../utils/mixin";
 .aboutus {
   background-color: #f5f4fa;
-  &-list {
+  &__list {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     list-style-type: none;
-    &-item {
+    &__item {
       display: flex;
       flex-direction: column;
       background-color: #ffffff;
@@ -23,7 +23,7 @@
 .item-paragraf {
   @include size(16px);
 }
-.media-list {
+.media__list {
   display: flex;
   align-items: center;
   justify-content: space-between;

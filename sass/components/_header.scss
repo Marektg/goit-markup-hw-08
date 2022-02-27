@@ -2,7 +2,7 @@
 
 .header {
   border-bottom: 1px solid #ececec;
-  &-menu {
+  &__menu {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
@@ -21,27 +21,27 @@
     letter-spacing: 0.03em;
     text-decoration: none;
   }
-  &-span-header {
+  &__span-header {
     color: #000000;
   }
-  &-span-footer {
+  &__span-footer {
     color: #ffffff;
   }
 }
 
-.header-navi {
+.header__navi {
   font-weight: 500;
   font-size: 14px;
   display: inline-block;
   margin: 32px 371px 32px 93px;
-  &-list {
+  &__list {
     display: flex;
     width: 254px;
     justify-content: space-between;
   }
 }
 
-.navi-list-item {
+.navi__list-item {
   line-height: 1.172;
   letter-spacing: 0.02em;
   display: inline-block;

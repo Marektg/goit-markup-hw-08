@@ -1,16 +1,16 @@
 @import "../utils/mixin";
-.description-list {
+.description__list {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   list-style-type: none;
-&-item {
+&__item {
   flex-basis: 270px;
   display: flex;
   flex-direction: column;
 }
 }
-.description-list-item .icon {
+.description__list__item .icon {
   width: 70px;
   height: 70px;
   margin-top: 25px;

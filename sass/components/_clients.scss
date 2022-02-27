@@ -1,9 +1,9 @@
-.clients-list {
+.clients__list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   list-style-type: none;
-  &-item {
+  &__item {
     display: flex;
     justify-content: center;
     text-align: center;

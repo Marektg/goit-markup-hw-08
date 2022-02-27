@@ -1,8 +1,8 @@
-.whatwedo-list {
+.whatwedo__list {
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
-  &-item {
+  &__item {
     position: relative;
     display: block;
 
