@@ -76,7 +76,7 @@ ul {
   background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  cursor: url(../images/curblack.svg), pointer;
+  cursor: url(../../images/svg/curblack.svg), pointer;
 }
 
 .header {
@@ -300,27 +300,27 @@ ul {
 }
 
 .input__label-name {
-  background-image: url(../images/person-black.svg);
+  background-image: url(../../images/svg/person-black.svg);
   transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input__label-name:focus, .input__label-name:hover {
-  background-image: url(../images/person-hov.svg);
+  background-image: url(../../images/svg/person-hov.svg);
 }
 
 .input__label-phone {
-  background-image: url(../images/phone-black.svg);
+  background-image: url(../../images/svg/phone-black.svg);
   transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input__label-phone:focus, .input__label-phone:hover {
-  background-image: url(../images/phone-hov.svg);
+  background-image: url(../../images/svg/phone-hov.svg);
 }
 
 .input__label-mail {
-  background-image: url(../images/email-black.svg);
+  background-image: url(../../images/svg/email-black.svg);
   transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input__label-mail:focus, .input__label-mail:hover {
-  background-image: url(../images/email-hov.svg);
+  background-image: url(../../images/svg/email-hov.svg);
 }
 
 .input__label-coments {
@@ -362,7 +362,7 @@ ul {
 
 .modal__input-check:checked + .modal__akcept::before {
   border: 1px #2196f3 solid;
-  background-image: url(../images/icon-check.svg);
+  background-image: url(../../images/svg/icon-check.svg);
   background-position: center;
 }
 
@@ -591,7 +591,7 @@ ul {
 }
 .social__footer-link:hover, .social__footer-link:focus {
   background-color: #2196f3;
-  cursor: url(../images/Vector.svg), pointer;
+  cursor: url(../../images/svg/Vector.svg), pointer;
 }
 .social__footer-link:hover .icon {
   fill: white;
@@ -653,7 +653,7 @@ ul {
   overflow: hidden;
 }
 .projects__list__item:hover {
-  cursor: url(../images/curblack.svg), pointer;
+  cursor: url(../../images/svg/curblack.svg), pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .projects__list__item-head {

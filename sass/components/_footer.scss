@@ -59,7 +59,7 @@
     &:hover,
     &:focus {
       background-color: $hoverColor;
-      cursor: url(../images/Vector.svg), pointer;
+      cursor: url(../../images/svg/Vector.svg), pointer;
     }
     &:hover .icon {
       fill: white;
