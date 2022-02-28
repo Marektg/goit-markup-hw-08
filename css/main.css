@@ -300,27 +300,27 @@ ul {
 }
 
 .input__label-name {
-  background-image: url(../../images/svg/person-black.svg);
+  background-image: url(../images/svg/person-black.svg);
   transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input__label-name:focus, .input__label-name:hover {
-  background-image: url(../../images/svg/person-hov.svg);
+  background-image: url(../images/svg/person-hov.svg);
 }
 
 .input__label-phone {
-  background-image: url(../../images/svg/phone-black.svg);
+  background-image: url(../images/svg/phone-black.svg);
   transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input__label-phone:focus, .input__label-phone:hover {
-  background-image: url(../../images/svg/phone-hov.svg);
+  background-image: url(../images/svg/phone-hov.svg);
 }
 
 .input__label-mail {
-  background-image: url(../../images/svg/email-black.svg);
+  background-image: url(../images/svg/email-black.svg);
   transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input__label-mail:focus, .input__label-mail:hover {
-  background-image: url(../../images/svg/email-hov.svg);
+  background-image: url(../images/svg/email-hov.svg);
 }
 
 .input__label-coments {

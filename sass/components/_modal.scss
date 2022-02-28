@@ -84,31 +84,31 @@
 }
 .input__label-name {
   @extend .input__label;
-  background-image: url(../../images/svg/person-black.svg);
+  background-image: url(../images/svg/person-black.svg);
   transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
   &:hover {
-    background-image: url(../../images/svg/person-hov.svg);
+    background-image: url(../images/svg/person-hov.svg);
   }
 }
 .input__label-phone {
   @extend .input__label;
-  background-image: url(../../images/svg/phone-black.svg);
+  background-image: url(../images/svg/phone-black.svg);
   transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus,
   &:hover {
-    background-image: url(../../images/svg/phone-hov.svg);
+    background-image: url(../images/svg/phone-hov.svg);
   }
 }
 .input__label-mail {
   @extend .input__label;
-  background-image: url(../../images/svg/email-black.svg);
+  background-image: url(../images/svg/email-black.svg);
   transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus,
   &:hover {
-    background-image: url(../../images/svg/email-hov.svg);
+    background-image: url(../images/svg/email-hov.svg);
   }
 }
 .input__label-coments {
