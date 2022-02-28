@@ -143,7 +143,7 @@
 }
 .modal__input-check:checked + .modal__akcept::before {
   border: 1px $hoverColor solid;
-  background-image: url(../../images/svg/icon-check.svg);
+  background-image: url(../images/svg/icon-check.svg);
   background-position: center;
 }
 .visually-hidden {
