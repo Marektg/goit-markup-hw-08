@@ -13,7 +13,8 @@ ul {
   padding: 0;
 }
 .container {
-  width: 1200px;
+  width: 100%;
+  min-width: 320px;
   margin: 0 auto;
 }
 .section {

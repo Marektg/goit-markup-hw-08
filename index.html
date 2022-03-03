@@ -31,18 +31,19 @@
           <li class="navi__list-item"><a href="#">Kontakt</a></li>
         </ul>
       </nav>
-
-      <a class="contact mail" href="mailto:info@devstudio.com">
-        <svg class="icon">
-          <use href="images/svg/sprite.svg#icon-mail"></use>
-        </svg>
-        info@devstudio.com
-      </a>
-      <a class="contact tel" href="tel:+48111111111">
-        <svg class="icon">
-          <use href="images/svg/sprite.svg#icon-smartphone"></use>
-        </svg>
-        +48111111111</a>
+      <div class="header__contact">
+        <a class="contact mail" href="mailto:info@devstudio.com">
+          <svg class="icon">
+            <use href="images/svg/sprite.svg#icon-mail"></use>
+          </svg>
+          info@devstudio.com
+        </a>
+        <a class="contact tel" href="tel:+48111111111">
+          <svg class="icon">
+            <use href="images/svg/sprite.svg#icon-smartphone"></use>
+          </svg>
+          +48111111111</a>
+      </div>
     </div>
   </header>
   <main>
@@ -64,22 +65,24 @@
                 </svg>
               </button>
               <p class="modal__window-inputtitle">Zostaw swoje dane w formularzu poniżej</p>
-              <div >
+              <div>
                 <form name="input" class="modal__window-input">
                   <label for="user_name" class="modal__input-label">Imię</label>
-                    <input type="text" id="user_name" class="input__label-name">
-                  
+                  <input type="text" id="user_name" class="input__label-name">
+
                   <label for="user_phone" class="modal__input-label">Telefon</label>
                   <input type="text" id="user_phone" class="input__label-phone">
-                  
+
                   <label for="user_email" class="modal__input-label">Email</label>
-                    <input type="text" id="user_email" class="input__label-mail">
-                 
+                  <input type="text" id="user_email" class="input__label-mail">
+
                   <label for="user_coment" class="modal__input-label">Komentarz</label>
-                    <textarea name="coment" id="user_coment" cols="30" rows="10" placeholder="Wprowadź tekst" class="input__label-coments"></textarea>
-                 
+                  <textarea name="coment" id="user_coment" cols="30" rows="10" placeholder="Wprowadź tekst"
+                    class="input__label-coments"></textarea>
+
                   <input type="checkbox" name="akcept" id="user_akcept" class="modal__input-check visually-hidden">
-                  <label for="user_akcept" class="modal__akcept">Oświadczam iż akceptuję <a href=#>Regulamin</a> i <a href=#>Politykę Prywatności.</a></label>
+                  <label for="user_akcept" class="modal__akcept">Oświadczam iż akceptuję <a href=#>Regulamin</a> i <a
+                      href=#>Politykę Prywatności.</a></label>
                   <button type="submit" class="button-modal-submit">Wyślij</button>
                 </form>
               </div>
@@ -408,11 +411,11 @@
             </ul>
           </li>
         </ul>
-  
-<div class="newsletter">
-  <p class="social">zapisz się do newslettera</p>
+
+        <div class="newsletter">
+          <p class="social">zapisz się do newslettera</p>
           <form name="newsletter" class="newsletter__form">
-            
+
             <label for="social_email"></label>
             <input type="email" name="email" id="social_email" class="newsletter__form-input" placeholder="E-mail" />
             <button type="submit" class="social-bnt">
@@ -422,7 +425,7 @@
               </svg>
             </button>
           </form>
-      </div>
+        </div>
       </div>
     </div>
   </footer>

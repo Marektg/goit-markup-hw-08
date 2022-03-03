@@ -11,3 +11,31 @@
 @import "./components/footer";
 @import "./components/portfolio";
 
+@media (max-width: 768px) {
+  .container {
+    max-width: 480px;
+  }
+  .header__navi,
+  .header__contact {
+      display: none;
+  }
+  .header__menu {
+      justify-content: flex-start;
+  }
+  .logo {
+      margin-left: 15px;
+      display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
