@@ -475,6 +475,10 @@ ul {
   align-items: center;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.aboutus__list__item-pic {
+  height: 260px;
+  width: 270px;
+}
 
 .item-paragraf {
   font-size: 16px;
@@ -728,6 +732,10 @@ ul {
     max-width: 768px;
   }
 
+  .section-head {
+    font-size: 28px;
+  }
+
   .header__menu__navi,
 .whatwedo {
     display: none;
@@ -763,6 +771,61 @@ ul {
 
   .item-icon {
     margin-top: 30px;
+  }
+
+  .aboutus__list {
+    display: block;
+  }
+  .aboutus__list__item-pic {
+    height: 460px;
+    width: 450px;
+  }
+
+  .item-paragraf {
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
+
+  .clients__list {
+    flex-wrap: wrap;
+    margin: 15px;
+  }
+  .clients__list__item {
+    margin-bottom: 30px;
+  }
+
+  .clients-link {
+    display: block;
+    width: 210px;
+    height: 92px;
+    margin: 0;
+    padding: 0;
+  }
+  .clients-link .icon {
+    fill: #afb1b8;
+  }
+
+  .footmain,
+.footer__list,
+.newsletter,
+.newsletter__form {
+    display: block;
+    text-align: center;
+  }
+
+  .footer__list {
+    width: 100%;
+    text-align: center;
+  }
+
+  .social {
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+
+  .social__footer__list {
+    width: 206px;
+    margin-left: 137px;
   }
 }
 @media (min-width: 768px) {
