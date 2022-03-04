@@ -6,6 +6,9 @@
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+    &__navi {
+      display: flex;
+    }
   }
 }
 
