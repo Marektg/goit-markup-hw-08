@@ -11,10 +11,15 @@
 @import "./components/footer";
 @import "./components/portfolio";
 
-@media (max-width: 768px) {
-  .container {
-    min-width: 320px;
-    max-width: 768px;
+@media (max-width: 767px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .container,
+  .section {
+    max-width: 767px;
+   
   }
   .section-head {
     font-size: 28px;
@@ -37,6 +42,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url("../images/hero/headback-mobile.jpg");
+      background-size: cover;
     &-title {
       font-size: 26px;
     }
@@ -58,19 +64,26 @@
   .aboutus__list {
     display: block;
 
-    &__item-pic {
-      height: 460px;
-      width: 450px;
-    }
+    &__item {
+      margin: 15px 30px;
+      
+      &-pic {
+      height: auto;
+      width: 100%;
+
+    }}
   }
   .item-paragraf {
     margin-top: 10px;
     margin-bottom: 16px;
   }
   .clients__list {
-    flex-wrap: wrap;
+    width: 100%;
+    display: block;
     margin: 15px;
     &__item {
+      display: inline-block;
+      max-width: 210px;
       margin-bottom: 30px;
     }
   }
@@ -84,13 +97,18 @@
       fill: $mainicon;
     }
   }
-  .footmain,
-  .footer__list,
-  .newsletter,
-  .newsletter__form {
+  .footer {
+    padding: 0;
+  
+  &__footmain,
+  &__list {
     display: block;
     text-align: center;
     
+  }}
+  .newsletter__form {
+    display: block;
+    text-align: center;
   }
   .footer__list {
     width: 100%;
@@ -102,8 +120,26 @@
   }
   .social__footer__list {
     width: 206px;
-    margin-left: 137px;
+    margin: 0 auto;
   }
+  .newsletter {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+  &__form {
+    display:block;
+    margin: 0 auto;
+    &-input {
+      max-width: 450px;
+      
+  }
+}}
+.social-bnt {
+  display: block;
+  margin: 0 auto;
+}
 }
 
 @media (min-width: 768px) {

@@ -1,6 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
+  min-width: 320px;
 }
 
 h1,
@@ -540,10 +541,10 @@ ul {
   height: 80px;
   fill: #afb1b8;
 }
-.clients__list__item-link:hover {
+.clients__list__item-link:hover, .clients__list__item-link:focus {
   border: 1px solid #2196f3;
 }
-.clients__list__item-link:hover .icon {
+.clients__list__item-link:hover .icon, .clients__list__item-link:focus .icon {
   fill: #2196f3;
 }
 
@@ -726,10 +727,15 @@ ul {
   opacity: 0.9;
 }
 
-@media (max-width: 768px) {
-  .container {
-    min-width: 320px;
-    max-width: 768px;
+@media (max-width: 767px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container,
+.section {
+    max-width: 767px;
   }
 
   .section-head {
@@ -752,6 +758,7 @@ ul {
 
   .main__hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/headback-mobile.jpg");
+    background-size: cover;
   }
   .main__hero-title {
     font-size: 26px;
@@ -776,9 +783,12 @@ ul {
   .aboutus__list {
     display: block;
   }
+  .aboutus__list__item {
+    margin: 15px 30px;
+  }
   .aboutus__list__item-pic {
-    height: 460px;
-    width: 450px;
+    height: auto;
+    width: 100%;
   }
 
   .item-paragraf {
@@ -787,10 +797,13 @@ ul {
   }
 
   .clients__list {
-    flex-wrap: wrap;
+    width: 100%;
+    display: block;
     margin: 15px;
   }
   .clients__list__item {
+    display: inline-block;
+    max-width: 210px;
     margin-bottom: 30px;
   }
 
@@ -805,10 +818,15 @@ ul {
     fill: #afb1b8;
   }
 
-  .footmain,
-.footer__list,
-.newsletter,
-.newsletter__form {
+  .footer {
+    padding: 0;
+  }
+  .footer__footmain, .footer__list {
+    display: block;
+    text-align: center;
+  }
+
+  .newsletter__form {
     display: block;
     text-align: center;
   }
@@ -825,7 +843,27 @@ ul {
 
   .social__footer__list {
     width: 206px;
-    margin-left: 137px;
+    margin: 0 auto;
+  }
+
+  .newsletter {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .newsletter__form {
+    display: block;
+    margin: 0 auto;
+  }
+  .newsletter__form-input {
+    max-width: 450px;
+  }
+
+  .social-bnt {
+    display: block;
+    margin: 0 auto;
   }
 }
 @media (min-width: 768px) {

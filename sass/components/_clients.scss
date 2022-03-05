@@ -23,7 +23,9 @@
     height: 80px;
     fill: $mainicon;
   }
-  &:hover {
+  &:hover,
+  &:focus,
+   {
     border: 1px solid $hoverColor;
     & .icon {
       fill: $hoverColor;
