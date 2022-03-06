@@ -12,8 +12,12 @@ ul {
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
-  width: 1200px;
+  min-width: 1200px;
   margin: 0 auto;
 }
 
@@ -246,6 +250,7 @@ ul {
   border-radius: 4px;
 }
 .modal__window-close-btn {
+  padding: 0;
   position: -webkit-sticky;
   position: sticky;
   right: 8px;
@@ -705,4 +710,107 @@ ul {
   padding-right: 45px;
   padding-bottom: 45px;
   opacity: 0.9;
+}
+
+.mobile__menu__backdrop {
+  width: 100vw;
+  height: 100vh;
+  visibility: visible;
+  position: fixed;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  pointer-events: auto;
+  background: #fff;
+  z-index: 99;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mobile__menu__window {
+  position: absolute;
+  width: 480px;
+  height: 796px;
+  left: 0px;
+  top: 0px;
+  overflow-y: auto;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+.mobile__menu-close-btn {
+  position: -webkit-sticky;
+  position: sticky;
+  right: 11px;
+  top: 11px;
+  cursor: pointer;
+  fill: black;
+  background-color: white;
+  float: right;
+  border: none;
+}
+.mobile__menu-close-btn svg {
+  width: 40px;
+  height: 40px;
+}
+.mobile__menu-close-btn:hover {
+  fill: #2196f3;
+}
+
+.mobile__menu__list {
+  margin: 40px 48px;
+  font-size: 40px;
+  display: block;
+  margin-bottom: 306px;
+}
+.mobile__menu__list__item {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.mobile__menu__list__item a {
+  text-decoration: none;
+  color: #000;
+}
+.mobile__menu__list__item a:hover {
+  color: #2196f3;
+}
+
+.mobile__contact__socialMedia__list {
+  margin-bottom: 48px;
+  margin-left: 40px;
+  margin-top: 64px;
+  display: flex;
+}
+
+.socialMedia__list__item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.socialMedia__list__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.socialMedia__list__item a {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.mobile__contact-mail, .mobile__contact-tel {
+  margin-left: 40px;
+  margin-bottom: 32px;
+  text-decoration: none;
+  display: block;
+}
+
+.mobile__contact-tel {
+  font-size: 34px;
+  color: #2196f3;
+}
+
+.mobile__contact-mail {
+  font-size: 24px;
+  color: #757575;
 }/*# sourceMappingURL=main.css.map */
