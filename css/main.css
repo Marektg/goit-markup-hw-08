@@ -727,10 +727,11 @@ ul {
   opacity: 0.9;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   body {
     margin: 0;
     padding: 0;
+    min-width: 320px;
   }
 
   .container,
@@ -738,6 +739,9 @@ ul {
     max-width: 767px;
   }
 
+  .section {
+    padding: 15px 60px;
+  }
   .section-head {
     font-size: 28px;
   }

@@ -11,19 +11,22 @@
 @import "./components/footer";
 @import "./components/portfolio";
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   body {
     margin: 0;
     padding: 0;
+    min-width: 320px;
   }
   .container,
   .section {
     max-width: 767px;
    
   }
-  .section-head {
+  .section {
+    padding: 15px 60px;
+    &-head {
     font-size: 28px;
-  }
+  }}
 
   .header__menu__navi,
   .whatwedo {
