@@ -1,0 +1,17 @@
+%mobile__menu {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+.mobile__menu-show {
+    @extend %mobile__menu;
+visibility: visible;
+}
+
+.mobile__menu-is-hidden {
+        @extend %mobile__menu;
+visibility: hidden;
+
+}

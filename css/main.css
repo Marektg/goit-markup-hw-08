@@ -217,8 +217,7 @@ ul {
   justify-content: center;
 }
 .main__hero-div {
-  height: 200px;
-  width: 696px;
+  margin: 0 auto;
   text-align: center;
 }
 .main__hero-title {
@@ -727,7 +726,23 @@ ul {
   opacity: 0.9;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .mobile__menu-is-hidden, .mobile__menu-show {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+  }
+
+  .mobile__menu-show {
+    visibility: visible;
+  }
+
+  .mobile__menu-is-hidden {
+    visibility: hidden;
+  }
+
   body {
     margin: 0;
     padding: 0;
@@ -736,7 +751,7 @@ ul {
 
   .container,
 .section {
-    max-width: 767px;
+    width: 100%;
   }
 
   .section {
@@ -748,7 +763,7 @@ ul {
 
   .header__menu__navi,
 .whatwedo {
-    display: none;
+    visibility: hidden;
   }
 
   .header__menu {
@@ -762,125 +777,25 @@ ul {
 
   .main__hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/headback-mobile.jpg");
-    background-size: cover;
+    height: 400px;
   }
   .main__hero-title {
     font-size: 26px;
   }
-
-  .description__list {
-    display: block;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  .description__list__item {
-    text-align: center;
-  }
-  .description__list__item-paragraf {
-    text-align: start;
-  }
-
-  .item-icon {
-    margin-top: 30px;
-  }
-
-  .aboutus__list {
-    display: block;
-  }
-  .aboutus__list__item {
-    margin: 15px 30px;
-  }
-  .aboutus__list__item-pic {
-    height: auto;
-    width: 100%;
-  }
-
-  .item-paragraf {
-    margin-top: 10px;
-    margin-bottom: 16px;
-  }
-
-  .clients__list {
-    width: 100%;
-    display: block;
-    margin: 15px;
-  }
-  .clients__list__item {
-    display: inline-block;
-    max-width: 210px;
-    margin-bottom: 30px;
-  }
-
-  .clients-link {
-    display: block;
-    width: 210px;
-    height: 92px;
-    margin: 0;
-    padding: 0;
-  }
-  .clients-link .icon {
-    fill: #afb1b8;
-  }
-
-  .footer {
-    padding: 0;
-  }
-  .footer__footmain, .footer__list {
-    display: block;
-    text-align: center;
-  }
-
-  .newsletter__form {
-    display: block;
-    text-align: center;
-  }
-
-  .footer__list {
-    width: 100%;
-    text-align: center;
-  }
-
-  .social {
-    margin-top: 60px;
-    margin-bottom: 20px;
-  }
-
-  .social__footer__list {
-    width: 206px;
-    margin: 0 auto;
-  }
-
-  .newsletter {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .newsletter__form {
-    display: block;
-    margin: 0 auto;
-  }
-  .newsletter__form-input {
-    max-width: 450px;
-  }
-
-  .social-bnt {
-    display: block;
+  .main__hero-div {
     margin: 0 auto;
   }
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 768px) {
   .container {
     min-width: 768px;
-    max-width: 1200px;
   }
 
   .header__menu__navi-mobile {
     display: none;
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 1200px) {
   .container {
     max-width: 1200px;
   }
