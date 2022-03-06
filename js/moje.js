@@ -1,13 +1,14 @@
-var menuBg = document.getElementById('header__menu__navi-mobile');
-var closeBnt = document.getElementById('mobile__closeBnt');
+(() => {
+    const refs = {
+        openMobileMenuBtn: document.querySelector('[mobile-menu-open]'),
+        closeMobileMenuBtn: document.querySelector('[mobile-menu-close]'),
+        MobileMenu: document.querySelector('[mobile-menu]'),
+    };
 
+    refs.openMobileMenuBtn.addEventListener('click', toggleModal);
+    refs.closeMobileMenuBtn.addEventListener('click', toggleModal);
 
-function showMobileMenu() {
-   
-    menuBg.setAttribute('class', 'mobile__menu-show');
-   
-    closeBnt.setAttribute('onclick', 'closeMobileMenu()');
-}
-function closeMobileMenu() {
-    menuBg.setAttribute('class', 'mobile__menu-is-hidden');
-}
+    function toggleModal() {
+        refs.MobileMenu.classList.toggle('is-hidden');
+    }
+})();

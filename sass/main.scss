@@ -11,7 +11,7 @@
 @import "./components/footer";
 @import "./components/portfolio";
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   @import "./components/mobileMenu";
   body {
     margin: 0;
