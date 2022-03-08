@@ -2,24 +2,82 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+align-content: center;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../../images/headbackMobileSmall.jpg");
+    url("../images/headbackMobileSmall.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;}
+  height: 400px;
 
-
-  @media screen and (min-width:480px) and (max-width:767px) {
-      .main-hero {
-          background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../../images/headbackMobile.jpg");
-      }
+  &__flex {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  &__title-wrapper {
+      width: 280px;
+text-align: center;
   }
 
+  &__title {
+    font-weight: 900;
+    font-size: 26px;
+    color: #ffffff;
+    line-height: 1.364;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    .main-hero {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../../images/headbackMobile.jpg");
+        &__flex {
+      min-width: 480px;
+      max-width: 767px;
+    }}
+    .main-hero__title-wrapper {
+      width: 365px;}
+    
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .main-hero {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../../images/headbackTablet.jpg");
+        &__flex {
+      min-width: 768px;
+      max-width: 1199px;
+    }}
+    .main-hero__title-wrapper {
+      width: 365px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+  .main-hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/headback.jpg");
+    height: 600px;
+
+
+    &__title {
+      font-size: 44px;
+    }}
+    .main-hero__title-wrapper {
+        height: 200px;
+      width: 696px;
   
+    }
+  }

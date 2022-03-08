@@ -16,7 +16,9 @@
   }
   function widhtScreen() {
     var szerokosc = screen.width;
-    
+    if (szerokosc > 320 , szerokosc < 480) {
+      refs.modalWindow.classList.toggle('small');
+    }
     if (szerokosc < 1200) {
       refs.modalWindow.classList.toggle('mobile');
     }
