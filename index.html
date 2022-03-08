@@ -46,8 +46,8 @@
       </div>
       <div class="mobile__menu">
         <button class="mobile__menu-open-btn" type="button" data-mobileMenu-open>
-          <svg width="30" height="30">
-            <use href="images/svg/sprite.svg#icon-mobile-menu" width="30" height="30"></use>
+          <svg >
+            <use href="images/svg/sprite.svg#icon-mobile-menu"></use>
           </svg>
         </button>
         <div class="mobile__menu__backdrop is-hidden" data-mobileMenu>
@@ -79,18 +79,18 @@
   </header>
   <main>
     <!--Hero-->
-    <section class="main__hero section">
+    <section class="main-hero section">
       <div class="container">
-        <div class="main__hero-flex">
-          <div class="main__hero-div">
-            <h1 class="main__hero-title">
+        <div class="main-hero-flex">
+          <div class="main-hero-title-wrapper">
+            <h1 class="main-hero-title">
               Efektywne rozwiązania dla waszego biznesu
             </h1>
-            <button class="button-main-hero" type="button" data-modal-open>Zamów usługę</button>
+            <button class="button-main-hero" type="button" data-modal-open >Zamów usługę</button>
           </div>
           <div class="main__backdrop is-hidden" data-modal>
-            <div class="modal__window">
-              <button class="modal__window-close-btn" data-modal-close>
+            <div class="modal__window" id="modalWindow" data-modal-window>
+              <button class="modal__window-close-btn" data-modal-close >
                 <svg width="30" height="30">
                   <use href="images/svg/sprite.svg#icon-close" width="30" height="30"></use>
                 </svg>
@@ -206,7 +206,7 @@
         <h2 class="section-head">Nasz zespół</h2>
         <ul class="aboutus__list">
           <li class="aboutus__list__item">
-            <img src="images/team/productdesigner.jpg" height="260" width="270" alt="Product Designer photo" />
+            <img src="images/team/productdesigner.jpg" alt="Product Designer photo" class="aboutus__list__item-photo"/>
             <h3 class="item-heater">John Doe</h3>
             <p class="item-paragraf">Product Designer</p>
             <ul class="media__list">
@@ -241,7 +241,7 @@
             </ul>
           </li>
           <li class="aboutus__list__item">
-            <img src="images/team/frontenddev.jpg" height="260" width="270" alt="Frontend Developer photo" />
+            <img src="images/team/frontenddev.jpg" alt="Frontend Developer photo" class="aboutus__list__item-photo"/>
             <h3 class="item-heater">John Doe</h3>
             <p class="item-paragraf">Frontend Developer</p>
             <ul class="media__list">
@@ -276,7 +276,7 @@
             </ul>
           </li>
           <li class="aboutus__list__item">
-            <img src="images/team/marketing.jpg" height="260" width="270" alt="marketing executive photo" />
+            <img src="images/team/marketing.jpg" alt="marketing executive photo" class="aboutus__list__item-photo"/>
             <h3 class="item-heater">John Doe</h3>
             <p class="item-paragraf">Marketing</p>
             <ul class="media__list">
@@ -311,7 +311,7 @@
             </ul>
           </li>
           <li class="aboutus__list__item">
-            <img src="images/team/ui.jpg" height="260" width="270" alt="UI Designer photo" />
+            <img src="images/team/ui.jpg" alt="UI Designer photo" class="aboutus__list__item-photo"/>
             <h3 class="item-heater">John Doe</h3>
             <p class="item-paragraf">UI Designer</p>
             <ul class="media__list">
@@ -396,7 +396,7 @@
   </main>
   <footer class="footer">
     <div class="container">
-      <div class="footmain">
+      <div class="footer__footmain section">
         <ul class="footer__list">
           <li class="footer__list__item">
             <div class="logo">
@@ -411,28 +411,28 @@
           <li class="footer__list__item">
             <p class="social">dołącz do nas</p>
             <ul class="social__footer__list">
-              <li class="social-footer__list__item">
+              <li class="social__footer__list__item">
                 <a href="#" class="social__footer-link">
                   <svg class="icon">
                     <use href="images/svg/sprite.svg#icon-Istagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-footer__list__item">
+              <li class="social__footer__list__item">
                 <a href="#" class="social__footer-link">
                   <svg class="icon">
                     <use href="images/svg/sprite.svg#icon-Tweeter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-footer__list__item">
+              <li class="social__footer__list__item">
                 <a href="#" class="social__footer-link">
                   <svg class="icon">
                     <use href="images/svg/sprite.svg#icon-Facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-footer__list__item">
+              <li class="social__footer__list__item">
                 <a href="#" class="social__footer-link">
                   <svg class="icon">
                     <use href="images/svg/sprite.svg#icon-Linkedin"></use>

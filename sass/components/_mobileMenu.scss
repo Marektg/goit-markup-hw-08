@@ -28,12 +28,27 @@
     0px 1px 3px rgba(0, 0, 0, 0.16);
 
 }
-
+.mobile__menu-open-btn {
+  // margin-top: 10px;
+  // margin-right: 10px;
+   cursor: pointer;
+  fill: black;
+  background-color: white;
+  border: none;
+  & svg {
+ width: 30px;
+    height: 30px;
+  
+  &:hover,
+  &:focus {
+    fill: $hoverColor;
+  }
+}}
 .mobile__menu-close-btn {
    
   position: sticky;
-  right: 11px;
-  top: 11px;
+  right: 9px;
+  top: 9px;
   cursor: pointer;
   fill: black;
   background-color: white;
@@ -48,13 +63,13 @@
   }
 }
 .mobile__menu__list {
-    margin: 40px 48px;
+    margin: 20px 28px;
     font-size: 40px;
     display: block;
-    margin-bottom: 306px;
+    margin-bottom: 86px;
     &__item {
-        margin-top: 32px;
-        margin-bottom: 32px;
+        margin-top: 28px;
+        margin-bottom: 28px;
         
         & a {
             text-decoration: none;
@@ -68,14 +83,12 @@
 
 
 .mobile__contact__socialMedia__list {
-    margin-bottom: 48px;
-    margin-left: 40px;
-    margin-top: 64px;
-    display: flex;
+      display: flex;
+      padding: 5px 8px;
 }
 .socialMedia__list__item {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     &:not(:last-child) {
     border-right: 1px solid rgba(33, 33, 33, 0.2);}
     & a {
@@ -84,7 +97,7 @@
     }
 }
 %mobile__contact {
-    margin-left: 40px;
+    margin-left: 28px;
     margin-bottom: 32px;
     text-decoration: none;
     display: block;
@@ -101,5 +114,46 @@
     color: $secondColor;
 }
 
+ @media screen and (min-width:768px) {
+   .mobile__menu {
+     display: none;
+   }
+ }
 
+ @media screen and (min-width:480px) and (max-width:767px) {
+
+  .mobile__contact__socialMedia__list {
+      display: flex;
+      width: 352px;
+      margin-left: 15px;
+      margin-bottom: 48px;
+
+ }
+.socialMedia__list__item {
+    padding-left: 10px;
+    padding-right: 10px;
+    &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);}
+    & a {
+        color: $hoverColor;
+        text-decoration: none;
+    }
+}
+.mobile__menu__list {
+    margin: 48px 40px;
+    font-size: 40px;
+    display: block;
+    margin-bottom: 302px;
+    &__item {
+        margin-top: 32px;
+        margin-bottom: 32px;   
+                }
+    }
+
+.mobile__menu-close-btn {
+    right: 11px;
+  top: 11px;
+
+}}
+ 
 

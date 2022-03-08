@@ -3,80 +3,182 @@
 @import "./components/buttons";
 @import "./components/header";
 @import "./components/hero";
-@import "./components/modal";
-@import "./components/description";
-@import "./components/whatwedo";
-@import "./components/aboutus";
-@import "./components/clients";
-@import "./components/footer";
-@import "./components/portfolio";
+// @import "./components/modal";
+// @import "./components/description";
+// @import "./components/whatwedo";
+// @import "./components/aboutus";
+// @import "./components/clients";
+// @import "./components/footer";
+// @import "./components/portfolio";
 @import "./components/mobileMenu";
 
-@media (min-width: 768px) {
-  .mobile__menu {
-    display: none;
-  }
+.modal__window,
+.description,
+.whatwedo,
+.aboutus,
+.clients,
+.footer {
+  display: none;
 }
+// @media screen and (min-width: 768px) {
+//   .mobile__menu {
+//     display: none;
+//   }
+// }
 
-@media (max-width: 767px) {
-  .container,
-  .section {
-    min-width: 320px;
-  }
-  .header__menu {
-    justify-content: space-between;
-    align-content: space-between;
-  }
-  .header__navi,
-  .header__menu-contact,
-  .whatwedo {
-    display: none;
-  }
-  .main__hero {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../images/headbackMobile.jpg");
-    height: 400px;
-    &-title {
-      font-size: 26px;
-      &-div {
-        max-width: 365px;
-        min-height: 84px;
-        text-align: center;
-      }
-    }
-  }
-  .description__list {
-      display: block;
-      padding: 15px 30px;
-      text-align: center;
-      font-size: 14px;
-  }
-  .item-paragraf {
-      text-align: start;
-      margin-top: 10px;
-      margin-bottom: 30px;
+// @media screen and (max-width: 767px) {
+//   .container 
+//   .section {
+//     min-width: 320px;
+//   }
+ 
+//   .section-head {
+//     font-size: 28px;
+//     margin-bottom: 30px;
+//   }
+//   .header__menu {
+//     justify-content: space-between;
+//     align-content: space-between;
+//   }
+//   .header__navi,
+//   .header__menu-contact,
+//   .whatwedo {
+//     display: none;
+//   }
+//   .main-hero {
+//     background-image: linear-gradient(
+//         rgba(47, 48, 58, 0.4),
+//         rgba(47, 48, 58, 0.4)
+//       ),
+//       url("../images/headbackMobile.jpg");
+//     height: 400px;
+//   }
+//   .main__hero {
+//     &-title {
+//       font-size: 26px;
+//       &-wrapper {
+//         max-width: 365px;
+//         min-height: 84px;
+//         text-align: center;
+//       }
+//     }
+//   }
+//   .modal__akcept {
+//     margin-left: 40px;
+//   }
+//   .input__label {
+//     width: 370px;
+//   }
+//   .button-modal-submit {
+//     margin-left: 125px;
+//   }
+//   .description__list {
+//     display: block;
+//     padding: 15px 30px;
+//     text-align: center;
+//     font-size: 14px;
+//   }
+//   .item-paragraf {
+//     text-align: start;
+//     margin-top: 10px;
+//     margin-bottom: 30px;
+//   }
+//   .aboutus__list {
+//     display: block;
+//     &__item {
+//       margin: 30px 15px;
+      
+//     }
+//   }
+//   .clients {
+//     display: block;
+//     padding-left: 15px;
+//     padding-right: 15px;
+ 
+//   }
+//   .clients__list {
+//     display:flex;
+//     flex-wrap: wrap;
 
-    }
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  .container {
-    width: 768px;
-  }
-  .header__menu-contact {
-    display: block;
-  }
-  .main__hero {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../images/headbackTablet.jpg");
-    height: 400px;
-  }
-  .whatwedo {
-    display: none;
-  }
-}
+//   }
+//   .clients__list__item {
+//    display: block;
+//   margin-top: 30px;
+//   }
+//    .clients-link {
+//    width: 210px;
+//    height: 92px;
+//    }
+//    .footer__footmain {
+//      display: block;
+//          padding-left: 15px;
+//     padding-right: 15px;
+     
+//    }
+//    .footer__list {
+//      width: 100%;
+//      display: block;
+//      text-align: center;
+//      &__item{
+//        margin: 0 auto;
+//      }
+//    }
+//    .address {
+//      margin-bottom: 60px;
+//    }
+//    .social__footer__list {
+//      display: flex;
+//      justify-content: center;
+//      margin-top: 20px;
+//      margin-bottom: 60px;
+    
+     
+//    }
+//    .social {
+//      text-align: center;
+//    }
+//    .newsletter {
+//   width: 100%;
+//   &__form {
+//     flex-direction: column;
+//     &-input{
+//       width: 100%;
+//       min-width: 290px;
+//     max-width: 450px;
+//     }
+//   }
+// }
+// .social-bnt {
+//   margin:20px auto;
+// }
+
+
+// }
+// @media screen and (min-width: 768px) and (max-width: 1199px) {
+//   .container {
+//     min-width: 768px;
+//   }
+//   .header__menu-contact {
+//     display: block;
+//   }
+//   .main__hero {
+//     background-image: linear-gradient(
+//         rgba(47, 48, 58, 0.4),
+//         rgba(47, 48, 58, 0.4)
+//       ),
+//       url("../images/headbackTablet.jpg");
+//     height: 400px;
+//   }
+//   .whatwedo {
+//     display: none;
+//   }
+//   .modal__akcept {
+//     margin-left: 40px;
+//   }
+//   .input__label {
+//     width: 370px;
+//   }
+//   .button-modal-submit {
+//     margin-left: 125px;
+//   }
+// }
