@@ -17,13 +17,28 @@
   opacity: 0;
   pointer-events: none;
 }
+.modal__input-check:checked + .modal__akcept::before {
+  border: 1px $hoverColor solid;
+  background-image: url(../images/svg/icon-check.svg);
+  background-position: center;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
 .modal-window {
-  position: absolute;
-  height: 590px;
-  width: 528px;
-  overflow-y: auto;
+    position: absolute;
+      overflow-y: auto;
   top: 50%;
   left: 50%;
+  height: 460px;
+  width: 300px;
   transform: translate(-50%, -50%);
   background-color: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -45,36 +60,34 @@
     display: flex;
     float: right;
   }
-  &__inputtitle {
-    font-size: 20px;
+    &__inputtitle {
+    font-size: 12px;
     font-weight: 700;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 12px;
   }
-  &__input {
+    &__input {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
+
 .modal-input__label {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
   color: #757575;
   display: inline-block;
   margin-top: 10px;
   margin-bottom: 4px;
-  margin-left: 40px;
+  margin-left: 15px;
 }
-
 .input__label {
-  width: 448px;
-  // margin-left: 40px;
-  // margin-right: 40px;
+  width: 260px;
   padding-left: 42px;
   height: 40px;
   background-repeat: no-repeat;
@@ -117,10 +130,11 @@
     background-image: url(../images/svg/email-hov.svg);
   }
 }
+
 .input__label-coments {
   @extend .input__label;
   resize: none;
-  height: 120px;
+  height: 100px;
   padding: 16px 12px;
   &::placeholder {
     font-size: 12px;
@@ -128,10 +142,8 @@
     color: rgba(117, 117, 117, 0.5);
   }
 }
-
 .modal__akcept {
-  margin-top: 20px;
-  // margin-left: 77px;
+  margin-top: 15px;
   font-size: 14px;
   color: #757575;
   &::before {
@@ -147,56 +159,115 @@
     color: $hoverColor;
   }
 }
-.modal__input-check:checked + .modal__akcept::before {
-  border: 1px $hoverColor solid;
-  background-image: url(../images/svg/icon-check.svg);
-  background-position: center;
+@media screen and (min-width:480px) and (max-width:1199px) {
+.modal-window {
+  height: 609px;
+  width: 450px;
+  &__inputtitle {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 12px;
+  }
+  &__input {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
+.modal-input__label {
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  margin-left: 0px;
+}
+
+.input__label {
+  width: 370px;
+  padding-left: 42px;
+  height: 40px;
+}
+
+.input__label-coments {
+  height: 120px;
+  padding: 16px 12px;
+}
+
+.modal__akcept {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #757575;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 1px $mainColor solid;
+    margin-right: 7px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  & a {
+    color: $hoverColor;
+  }
 }
 
 
-// .desktop {
-//     position: absolute;
-//   overflow-y: auto;
 
-//    top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//     height: 581px;
-
-//   width: 528px;
+}
 
 
-// }
+@media screen and (min-width:1200px) {
 
-// .mobile {
-//     position: absolute;
-//   overflow-y: auto;
 
-//    top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-  
-//   height: 609px;
-//   width: 450px;
-// }
-// .small {
-//      position: absolute;
-//   overflow-y: auto;
+.modal-window {
+  height: 590px;
+  width: 528px;
+  &__inputtitle {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 12px;
+  }
+  &__input {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+.modal-input__label {
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  margin-left: 40px;
+}
 
-//    top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-  
-//   height: 406px;
-//   width: 300px;
-// }
+.input__label {
+  width: 448px;
+  padding-left: 42px;
+  height: 40px;
+}
+
+.input__label-coments {
+  height: 120px;
+  padding: 16px 12px;
+}
+
+.modal__akcept {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #757575;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 1px $mainColor solid;
+    margin-right: 7px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  & a {
+    color: $hoverColor;
+  }
+}
+
+
+
+}

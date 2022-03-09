@@ -15,9 +15,9 @@
 }
 .button-modal-submit {
   @extend .button;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   text-align: center;
-  margin-left: 124px;
+  margin-left: 40px;
 }
 .main-hero__button {
   @extend .button;
@@ -49,3 +49,20 @@
   border-radius: 4px;
   cursor: url(../images/svg/curblack.svg), pointer;
 }}
+@media screen and (min-width:480px) and (max-width:1199px) {
+  .button-modal-submit {
+  margin-bottom: 40px;
+  margin-left: 85px;
+  
+}
+}
+
+@media screen and (min-width:1200px) {
+.button-modal-submit {
+  margin-bottom: 40px;
+  margin-left: 124px;
+}
+
+
+
+}

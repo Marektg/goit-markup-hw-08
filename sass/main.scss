@@ -4,18 +4,14 @@
 @import "./components/header";
 @import "./components/hero";
 @import "./components/modal";
-// @import "./components/description";
-// @import "./components/whatwedo";
-// @import "./components/aboutus";
-// @import "./components/clients";
+@import "./components/description";
+@import "./components/whatwedo";
+@import "./components/aboutus";
+@import "./components/clients";
 // @import "./components/footer";
 // @import "./components/portfolio";
 @import "./components/mobileMenu";
 
-.description,
-.whatwedo,
-.aboutus,
-.clients,
 .footer {
   display: none;
 }
