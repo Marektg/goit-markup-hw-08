@@ -47,7 +47,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../images/headbackMobile.jpg");
+      url("../images/headbackMobile.jpg");
     &__flex {
       min-width: 480px;
       max-width: 767px;
@@ -63,7 +63,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../images/headbackMobile@2x.jpg");
+      url("../images/headbackMobile@2x.jpg");
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -72,7 +72,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../images/headbackTablet.jpg");
+      url("../images/headbackTablet.jpg");
     &__flex {
       min-width: 768px;
       max-width: 1199px;
@@ -88,7 +88,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../images/headbackTablet@2x.jpg");
+      url("../images/headbackTablet@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
