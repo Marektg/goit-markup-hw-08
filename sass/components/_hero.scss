@@ -32,7 +32,7 @@
     text-transform: uppercase;
   }
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
   .main-hero {
     background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -57,7 +57,7 @@
     width: 365px;
   }
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx), screen and (min-width: 480px) and (max-width: 767px) {
+@media (min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-resolution: 2dppx) and screen and (min-width: 480px) and (max-width: 767px) {
   .main-hero {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -82,7 +82,7 @@
     width: 365px;
   }
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx), screen and (min-width: 768px) and (max-width: 1199px) {
+@media (min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-resolution: 2dppx) and screen and (min-width: 768px) and (max-width: 1199px) {
   .main-hero {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -109,7 +109,7 @@
     width: 696px;
   }
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx), screen and (min-width: 1200px) {
+@media (min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-resolution: 2dppx) and screen and (min-width: 1200px) {
   .main-hero {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
