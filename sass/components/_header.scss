@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding-left:  15px;
+    padding-left: 15px;
     padding-right: 15px;
     padding-top: 16px;
   }
@@ -30,8 +30,6 @@
   }
 }
 
-
-
 .navi__list-item {
   line-height: 1.172;
   letter-spacing: 0.02em;
@@ -62,8 +60,6 @@
     left: 0;
   }
 }
-
-
 
 .contact {
   display: flex;
@@ -86,129 +82,123 @@
   & .icon:hover,
   & .icon:focus {
     fill: $hoverColor;
-  }}
+  }
+}
 .header__navi,
-  .header__menu-contact {
-      display: none;
-  }
-
-
-
-  @media screen and (min-width:768px) and (max-width:1199px) {
 .header__menu-contact {
-  display: block;
-  align-content: space-between;
+  display: none;
 }
-.header__navi {
-  font-weight: 500;
-  font-size: 14px;
-  display: inline-block;
-  margin: 32px 83px 32px 73px;
-  &__list {
-    display: flex;
-    width: 282px;
-    justify-content: space-between;
-  }
-}
-.contact {
-    margin-left: 0;
-}
-.mail {
-    margin-bottom: 10px;
-}
-.active {
-  & a {
-    color: $hoverColor;
-  }
-  &:after {
-    position: absolute;
-    content: "";
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header__menu-contact {
     display: block;
-    top: 45px;
-    width: 100%;
-    height: 5px;
-    background-color: $hoverColor;
-    border-radius: 4px;
-    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    align-content: space-between;
   }
-}
-  }
-
-
-  @media screen and (min-width:1200px) {
-.header__menu {
-    width: 100%;
-    &-contact {
-  display: flex;}}
-
-
-
-.header__navi {
-
-  display: inline-block;
-  margin: 32px 361px 32px 93px;
-  &__list {
-    display: flex;
-    width: 254px;
-    justify-content: space-between;
-  }
-}
-
-.navi__list-item {
-  line-height: 1.172;
-  letter-spacing: 0.02em;
-  display: inline-block;
-  position: relative;
-  & a {
-    text-decoration: none;
-    color: $mainColor;
-    &:hover,
-    &:focus {
-      color: $hoverColor;
+  .header__navi {
+    font-weight: 500;
+    font-size: 14px;
+    display: inline-block;
+    margin: 32px 83px 32px 73px;
+    &__list {
+      display: flex;
+      width: 282px;
+      justify-content: space-between;
     }
   }
-  &:after {
-    position: absolute;
-    content: "";
-    display: block;
-    top: 45px;
-    right: 0;
-    width: 0;
-    height: 5px;
-    background-color: $hoverColor;
-    border-radius: 4px;
-    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .contact {
+    margin-left: 0;
   }
-  &:hover::after {
-    width: 100%;
-    left: 0;
+  .mail {
+    margin-bottom: 10px;
   }
-}
-
-.active {
-  & a {
-    color: $hoverColor;
-  }
-  &:after {
-    position: absolute;
-    content: "";
-    display: block;
-    top: 45px;
-    width: 100%;
-    height: 5px;
-    background-color: $hoverColor;
-    border-radius: 4px;
-    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .active {
+    & a {
+      color: $hoverColor;
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      display: block;
+      top: 45px;
+      width: 100%;
+      height: 5px;
+      background-color: $hoverColor;
+      border-radius: 4px;
+      transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 }
 
-.contact {
+@media screen and (min-width: 1200px) {
+  .header__menu {
+    width: 100%;
+    &-contact {
+      display: flex;
+    }
+  }
+
+  .header__navi {
+    display: inline-block;
+    margin: 32px 361px 32px 93px;
+    &__list {
+      display: flex;
+      width: 254px;
+      justify-content: space-between;
+    }
+  }
+
+  .navi__list-item {
+    line-height: 1.172;
+    letter-spacing: 0.02em;
+    display: inline-block;
+    position: relative;
+    & a {
+      text-decoration: none;
+      color: $mainColor;
+      &:hover,
+      &:focus {
+        color: $hoverColor;
+      }
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      display: block;
+      top: 45px;
+      right: 0;
+      width: 0;
+      height: 5px;
+      background-color: $hoverColor;
+      border-radius: 4px;
+      transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:hover::after {
+      width: 100%;
+      left: 0;
+    }
+  }
+
+  .active {
+    & a {
+      color: $hoverColor;
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      display: block;
+      top: 45px;
+      width: 100%;
+      height: 5px;
+      background-color: $hoverColor;
+      border-radius: 4px;
+      transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  .contact {
     margin: 0;
-    
-}
-.tel {
-    margin-left: 30px;
-    
-}
-
   }
+  .tel {
+    margin-left: 30px;
+  }
+}

@@ -9,7 +9,6 @@
   pointer-events: auto;
   background: #fff;
   z-index: 99;
-  ;
 }
 .is-hidden {
   visibility: hidden;
@@ -19,7 +18,6 @@
 .mobile__menu__window {
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -29,26 +27,23 @@
   background-color: white;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
-
 }
 .mobile__menu-open-btn {
-  // margin-top: 10px;
-  // margin-right: 10px;
-   cursor: pointer;
+  cursor: pointer;
   fill: black;
   background-color: white;
   border: none;
   & svg {
- width: 30px;
+    width: 30px;
     height: 30px;
-  
-  &:hover,
-  &:focus {
-    fill: $hoverColor;
+
+    &:hover,
+    &:focus {
+      fill: $hoverColor;
+    }
   }
-}}
+}
 .mobile__menu-close-btn {
-   
   position: absolute;
   right: 0;
   top: 9px;
@@ -58,7 +53,7 @@
   float: right;
   border: none;
   & svg {
- width: 40px;
+    width: 40px;
     height: 40px;
   }
   &:hover {
@@ -66,97 +61,93 @@
   }
 }
 .mobile__menu__list {
-    margin: 20px 28px;
-    font-size: 40px;
-    display: block;
-    margin-bottom: 50px;
-    &__item {
-        margin-top: 28px;
-        margin-bottom: 28px;
-        
-        & a {
-            text-decoration: none;
-            color: #000;
-            &:hover{
-                color: $hoverColor;
-            }
-        }
-    }
-}
+  margin: 20px 28px;
+  font-size: 40px;
+  display: block;
+  margin-bottom: 50px;
+  &__item {
+    margin-top: 28px;
+    margin-bottom: 28px;
 
+    & a {
+      text-decoration: none;
+      color: #000;
+      &:hover {
+        color: $hoverColor;
+      }
+    }
+  }
+}
 
 .mobile__contact__socialMedia__list {
-      display: flex;
-      padding: 5px 8px;
+  display: flex;
+  padding: 5px 8px;
 }
 .socialMedia__list__item {
-    padding-left: 5px;
-    padding-right: 5px;
-    &:not(:last-child) {
-    border-right: 1px solid rgba(33, 33, 33, 0.2);}
-    & a {
-        color: $hoverColor;
-        text-decoration: none;
-    }
+  padding-left: 5px;
+  padding-right: 5px;
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  & a {
+    color: $hoverColor;
+    text-decoration: none;
+  }
 }
 %mobile__contact {
-    margin-left: 28px;
-    margin-bottom: 32px;
-    text-decoration: none;
-    display: block;
+  margin-left: 28px;
+  margin-bottom: 32px;
+  text-decoration: none;
+  display: block;
 }
 .mobile__contact-tel {
-    @extend %mobile__contact;
-    font-size: 34px;
-    color: $hoverColor;
-
+  @extend %mobile__contact;
+  font-size: 34px;
+  color: $hoverColor;
 }
 .mobile__contact-mail {
-    @extend %mobile__contact;
-    font-size: 24px;
-    color: $secondColor;
+  @extend %mobile__contact;
+  font-size: 24px;
+  color: $secondColor;
 }
 
- @media screen and (min-width:768px) {
-   .mobile__menu {
-     display: none;
-   }
- }
+@media screen and (min-width: 768px) {
+  .mobile__menu {
+    display: none;
+  }
+}
 
- @media screen and (min-width:480px) and (max-width:767px) {
-
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .mobile__contact__socialMedia__list {
-      display: flex;
-      width: 352px;
-      margin-left: 15px;
-      margin-bottom: 48px;
-
- }
-.socialMedia__list__item {
+    display: flex;
+    width: 352px;
+    margin-left: 15px;
+    margin-bottom: 48px;
+  }
+  .socialMedia__list__item {
     padding-left: 10px;
     padding-right: 10px;
     &:not(:last-child) {
-    border-right: 1px solid rgba(33, 33, 33, 0.2);}
-    & a {
-        color: $hoverColor;
-        text-decoration: none;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
     }
-}
-.mobile__menu__list {
+    & a {
+      color: $hoverColor;
+      text-decoration: none;
+    }
+  }
+  .mobile__menu__list {
     margin: 48px 40px;
     font-size: 40px;
     display: block;
     margin-bottom: 275px;
     &__item {
-        margin-top: 32px;
-        margin-bottom: 32px;   
-                }
+      margin-top: 32px;
+      margin-bottom: 32px;
     }
+  }
 
-.mobile__menu-close-btn {
+  .mobile__menu-close-btn {
     right: 11px;
-  top: 11px;
-
-}}
- 
-
+    top: 11px;
+  }
+}

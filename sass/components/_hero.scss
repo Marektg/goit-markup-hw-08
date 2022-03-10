@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-align-content: center;
+  align-content: center;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -18,8 +18,8 @@ align-content: center;
     align-content: center;
   }
   &__title-wrapper {
-      width: 280px;
-text-align: center;
+    width: 280px;
+    text-align: center;
   }
 
   &__title {
@@ -32,37 +32,39 @@ text-align: center;
     text-transform: uppercase;
   }
 }
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    .main-hero {
-      background-image: linear-gradient(
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url("../../images/headbackMobile.jpg");
-        &__flex {
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .main-hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/headbackMobile.jpg");
+    &__flex {
       min-width: 480px;
       max-width: 767px;
-    }}
-    .main-hero__title-wrapper {
-      width: 365px;}
-    
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .main-hero {
-      background-image: linear-gradient(
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url("../../images/headbackTablet.jpg");
-        &__flex {
-      min-width: 768px;
-      max-width: 1199px;
-    }}
-    .main-hero__title-wrapper {
-      width: 365px;
     }
   }
-  @media screen and (min-width: 1200px) {
+  .main-hero__title-wrapper {
+    width: 365px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main-hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/headbackTablet.jpg");
+    &__flex {
+      min-width: 768px;
+      max-width: 1199px;
+    }
+  }
+  .main-hero__title-wrapper {
+    width: 365px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .main-hero {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -71,13 +73,12 @@ text-align: center;
       url("../images/headback.jpg");
     height: 600px;
 
-
     &__title {
       font-size: 44px;
-    }}
-    .main-hero__title-wrapper {
-        height: 200px;
-      width: 696px;
-  
     }
   }
+  .main-hero__title-wrapper {
+    height: 200px;
+    width: 696px;
+  }
+}

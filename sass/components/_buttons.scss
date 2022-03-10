@@ -42,31 +42,29 @@
   height: 38px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-&:hover,
-&:focus {
-  color: #ffffff;
-  background-color: $hoverColor;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  cursor: url(../images/svg/curblack.svg), pointer;
-}}
-@media screen and (min-width:480px) and (max-width:1199px) {
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: $hoverColor;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    cursor: url(../images/svg/curblack.svg), pointer;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .button-modal-submit {
-  margin-bottom: 40px;
-  margin-left: 85px;
-  
-}
-.filter-bnt {
-  padding: 2px 10px};
-}
-
-@media screen and (min-width:1200px) {
-.button-modal-submit {
-  margin-bottom: 40px;
-  margin-left: 124px;
+    margin-bottom: 40px;
+    margin-left: 85px;
+  }
+  .filter-bnt {
+    padding: 2px 10px;
+  }
 }
 
-
-
+@media screen and (min-width: 1200px) {
+  .button-modal-submit {
+    margin-bottom: 40px;
+    margin-left: 124px;
+  }
 }
