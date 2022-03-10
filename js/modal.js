@@ -15,13 +15,13 @@
 })();
 (() => {
   const refs = {
-    openMobileMenulBtn: document.querySelector('[data-mobileMenu-open]'),
+    openMobileMenuBtn: document.querySelector('[data-mobileMenu-open]'),
     closeMobileMenuBtn: document.querySelector('[data-mobileMenu-close]'),
     mobileMenu: document.querySelector('[data-mobileMenu]'),
   };
 
-  refs.openMobileMenulBtn.addEventListener('click', toggleMobile);
- 
+  refs.openMobileMenuBtn.addEventListener('click', toggleMobile);
+
   refs.closeMobileMenuBtn.addEventListener('click', toggleMobile);
 
   function toggleMobile() {
