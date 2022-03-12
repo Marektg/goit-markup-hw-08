@@ -731,6 +731,7 @@ a {
   .description__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-content: space-between;
   }
   .description__list__item {
@@ -808,6 +809,8 @@ a {
   padding-bottom: 60px;
 }
 .aboutus__list {
+  margin: 0 auto;
+  width: 100%;
   display: block;
   background-color: #f5f4fa;
 }
@@ -823,8 +826,8 @@ a {
 }
 
 .aboutus__list__item-photo {
-  width: 260px;
-  height: 270px;
+  width: 100%;
+  height: auto;
 }
 
 .item-paragraf {
@@ -859,16 +862,11 @@ a {
   fill: #fff;
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  .aboutus__list__item-photo {
-    width: 450px;
-    height: 460px;
-  }
-}
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .aboutus__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .aboutus__list__item-photo {
     width: 354px;
@@ -930,6 +928,7 @@ a {
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .clients__list {
     width: 450px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -937,7 +936,12 @@ a {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients {
+    text-align: center;
+  }
+
   .clients__list {
+    margin: 0 auto;
     width: 738px;
     display: flex;
     flex-wrap: wrap;

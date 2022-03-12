@@ -4,6 +4,8 @@
   padding-top: 60px;
   padding-bottom: 60px;
   &__list {
+    margin: 0 auto;
+    width: 100%;
     display: block;
     background-color: #f5f4fa;
     &__item {
@@ -22,8 +24,8 @@
   }
 }
 .aboutus__list__item-photo {
-  width: 260px;
-  height: 270px;
+  width: 100%;
+  height: auto;
 }
 .item-paragraf {
   @include size(16px);
@@ -57,17 +59,18 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  .aboutus__list__item-photo {
-    width: 450px;
-    height: 460px;
-  }
-}
+// @media screen and (min-width: 480px) and (max-width: 768px) {
+//   .aboutus__list__item-photo {
+//     width: 450px;
+//     height: 460px;
+//   }
+// }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .aboutus__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
     &__item-photo {
       width: 354px;
