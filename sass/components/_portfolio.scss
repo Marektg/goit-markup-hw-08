@@ -13,10 +13,11 @@
 }
 
 .projects__list {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-bottom: 60px;
+  margin: 0 auto 60px auto;
   &__item {
     border: 1px solid #eeeeee;
     height: 404px;
@@ -108,12 +109,15 @@
   }
 
   .projects__list {
-    justify-content: center;
+    width: 100%;
+    justify-content: space-between;
     &__item {
       display: block;
       width: 354px;
+     
     }
   }
+
 }
 
 @media screen and (min-width: 1200px) {
