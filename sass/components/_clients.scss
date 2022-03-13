@@ -1,5 +1,6 @@
 .clients {
   margin-top: 60px;
+  margin-bottom: 60px;
 
 }
 .clients__list {
@@ -65,6 +66,9 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .clients {
+    margin-bottom: 94px;
+  }
   .clients__list {
     display: flex;
     flex-direction: row;

@@ -16,6 +16,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-bottom: 60px;
   &__item {
     border: 1px solid #eeeeee;
     height: 404px;
@@ -107,7 +108,7 @@
   }
 
   .projects__list {
-    justify-content: start;
+    justify-content: center;
     &__item {
       display: block;
       width: 354px;
@@ -125,6 +126,7 @@
   }
   .projects__list {
     justify-content: start;
+    margin-bottom: 94px;
     &__item {
       display: block;
       width: 354px;

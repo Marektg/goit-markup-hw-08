@@ -146,6 +146,7 @@ a {
 
 .logo {
   display: inline;
+  margin-bottom: 16px;
 }
 .logo a {
   font-family: "Raleway", sans-serif;
@@ -892,6 +893,7 @@ a {
 }
 .clients {
   margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .clients__list {
@@ -954,6 +956,10 @@ a {
   }
 }
 @media screen and (min-width: 1200px) {
+  .clients {
+    margin-bottom: 94px;
+  }
+
   .clients__list {
     display: flex;
     flex-direction: row;
@@ -1149,6 +1155,7 @@ a {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-bottom: 60px;
 }
 .projects__list__item {
   border: 1px solid #eeeeee;
@@ -1242,7 +1249,7 @@ a {
   }
 
   .projects__list {
-    justify-content: start;
+    justify-content: center;
   }
   .projects__list__item {
     display: block;
@@ -1261,13 +1268,14 @@ a {
 
   .projects__list {
     justify-content: start;
+    margin-bottom: 94px;
   }
   .projects__list__item {
     display: block;
     width: 354px;
   }
 }
-.mobile__menu__backdrop {
+.mobile-menu__backdrop {
   width: 100vw;
   height: 100vh;
   visibility: visible;
@@ -1286,7 +1294,7 @@ a {
   pointer-events: none;
 }
 
-.mobile__menu__window {
+.mobile-menu__window {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -1299,21 +1307,21 @@ a {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 }
 
-.mobile__menu-open-btn {
+.mobile-menu-open-btn {
   cursor: pointer;
   fill: black;
   background-color: white;
   border: none;
 }
-.mobile__menu-open-btn svg {
+.mobile-menu-open-btn svg {
   width: 30px;
   height: 30px;
 }
-.mobile__menu-open-btn svg:hover, .mobile__menu-open-btn svg:focus {
+.mobile-menu-open-btn svg:hover, .mobile-menu-open-btn svg:focus {
   fill: #2196f3;
 }
 
-.mobile__menu-close-btn {
+.mobile-menu-close-btn {
   position: absolute;
   right: 0;
   top: 9px;
@@ -1323,33 +1331,37 @@ a {
   float: right;
   border: none;
 }
-.mobile__menu-close-btn svg {
+.mobile-menu-close-btn svg {
   width: 40px;
   height: 40px;
 }
-.mobile__menu-close-btn:hover {
+.mobile-menu-close-btn:hover {
   fill: #2196f3;
 }
 
-.mobile__menu__list {
+.mobile-menu__list {
   margin: 20px 28px;
   font-size: 40px;
   display: block;
   margin-bottom: 50px;
 }
-.mobile__menu__list__item {
+.mobile-menu__list__item {
   margin-top: 28px;
   margin-bottom: 28px;
 }
-.mobile__menu__list__item a {
+.mobile-menu__list__item a {
   text-decoration: none;
   color: #000;
 }
-.mobile__menu__list__item a:hover {
+.mobile-menu__list__item a:hover {
   color: #2196f3;
 }
 
-.mobile__contact__socialMedia__list {
+.active a {
+  color: #2196f3;
+}
+
+.mobile-contact__socialMedia__list {
   display: flex;
   padding: 5px 8px;
 }
@@ -1366,30 +1378,30 @@ a {
   text-decoration: none;
 }
 
-.mobile__contact-mail, .mobile__contact-tel {
+.mobile-contact-mail, .mobile-contact-tel {
   margin-left: 28px;
   margin-bottom: 32px;
   text-decoration: none;
   display: block;
 }
 
-.mobile__contact-tel {
+.mobile-contact-tel {
   font-size: 34px;
   color: #2196f3;
 }
 
-.mobile__contact-mail {
+.mobile-contact-mail {
   font-size: 24px;
   color: #757575;
 }
 
 @media screen and (min-width: 768px) {
-  .mobile__menu {
+  .mobile-menu {
     display: none;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .mobile__contact__socialMedia__list {
+  .mobile-contact__socialMedia__list {
     display: flex;
     width: 352px;
     margin-left: 15px;
@@ -1408,18 +1420,18 @@ a {
     text-decoration: none;
   }
 
-  .mobile__menu__list {
+  .mobile-menu__list {
     margin: 48px 40px;
     font-size: 40px;
     display: block;
     margin-bottom: 275px;
   }
-  .mobile__menu__list__item {
+  .mobile-menu__list__item {
     margin-top: 32px;
     margin-bottom: 32px;
   }
 
-  .mobile__menu-close-btn {
+  .mobile-menu-close-btn {
     right: 11px;
     top: 11px;
   }

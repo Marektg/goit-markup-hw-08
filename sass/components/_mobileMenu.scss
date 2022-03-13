@@ -1,4 +1,4 @@
-.mobile__menu__backdrop {
+.mobile-menu__backdrop {
   width: 100vw;
   height: 100vh;
   visibility: visible;
@@ -15,7 +15,7 @@
   opacity: 0;
   pointer-events: none;
 }
-.mobile__menu__window {
+.mobile-menu__window {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -28,7 +28,7 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
 }
-.mobile__menu-open-btn {
+.mobile-menu-open-btn {
   cursor: pointer;
   fill: black;
   background-color: white;
@@ -43,7 +43,7 @@
     }
   }
 }
-.mobile__menu-close-btn {
+.mobile-menu-close-btn {
   position: absolute;
   right: 0;
   top: 9px;
@@ -60,7 +60,7 @@
     fill: $hoverColor;
   }
 }
-.mobile__menu__list {
+.mobile-menu__list {
   margin: 20px 28px;
   font-size: 40px;
   display: block;
@@ -76,10 +76,15 @@
         color: $hoverColor;
       }
     }
+    
   }
 }
-
-.mobile__contact__socialMedia__list {
+.active {
+    & a {
+      color: $hoverColor;
+    }
+  }
+.mobile-contact__socialMedia__list {
   display: flex;
   padding: 5px 8px;
 }
@@ -94,31 +99,31 @@
     text-decoration: none;
   }
 }
-%mobile__contact {
+%mobile-contact {
   margin-left: 28px;
   margin-bottom: 32px;
   text-decoration: none;
   display: block;
 }
-.mobile__contact-tel {
-  @extend %mobile__contact;
+.mobile-contact-tel {
+  @extend %mobile-contact;
   font-size: 34px;
   color: $hoverColor;
 }
-.mobile__contact-mail {
-  @extend %mobile__contact;
+.mobile-contact-mail {
+  @extend %mobile-contact;
   font-size: 24px;
   color: $secondColor;
 }
 
 @media screen and (min-width: 768px) {
-  .mobile__menu {
+  .mobile-menu {
     display: none;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .mobile__contact__socialMedia__list {
+  .mobile-contact__socialMedia__list {
     display: flex;
     width: 352px;
     margin-left: 15px;
@@ -135,7 +140,7 @@
       text-decoration: none;
     }
   }
-  .mobile__menu__list {
+  .mobile-menu__list {
     margin: 48px 40px;
     font-size: 40px;
     display: block;
@@ -146,7 +151,7 @@
     }
   }
 
-  .mobile__menu-close-btn {
+  .mobile-menu-close-btn {
     right: 11px;
     top: 11px;
   }
