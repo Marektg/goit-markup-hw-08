@@ -476,7 +476,6 @@ a {
 }
 .modal-window__close-btn {
   padding: 0;
-  position: -webkit-sticky;
   position: sticky;
   right: 8px;
   top: 8px;
@@ -557,14 +556,6 @@ a {
   resize: none;
   height: 100px;
   padding: 16px 12px;
-}
-.input__label-coments::-moz-placeholder {
-  font-size: 12px;
-  color: rgba(117, 117, 117, 0.5);
-}
-.input__label-coments:-ms-input-placeholder {
-  font-size: 12px;
-  color: rgba(117, 117, 117, 0.5);
 }
 .input__label-coments::placeholder {
   font-size: 12px;
@@ -695,7 +686,7 @@ a {
 }
 .description__list {
   display: block;
-  padding: 60px 0;
+  padding: 60px 15px;
 }
 
 .description__list__item .icon {
